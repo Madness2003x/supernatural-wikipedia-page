@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+    padding: 3px 50px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/*** NAVBAR ***/
+nav {
+    background-color: lightblue;
+    height: 60px;
+    width: 100%;
+    display: flex;
+}
+
+/** LEFT NAVBAR **/
+nav .left {
+    background-color: gray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dropdown {
+    padding: 5px 5px 5px 0;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    border: 2px solid transparent;
+}
+
+.drop-down:visited {
+    border: 2px solid blue;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.wk-logo-wrapper {
+    height: 100%;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    background-color: lightgreen;
+}
+
+.wk-logo-wrapper .logo {
+    height: 50px;
+    width: 50px;
+}
+
+.wk-logo-wrapper .logo-name {
+    height: 110px;
+    width: 138px;
+}
+
+
+/** CENTER NAVBAR **/
+nav .center {
+    display: flex;
+    align-items: center;
+}
+
+.search-box-wrapper {
+    width: 31.3rem;
+    height: 32px;
+    margin-left: 23px;
+    border: 1px solid #a0a0a0;
+    border-radius: 2px;
+    background: transparent;
+    display: flex;
+}
+
+.fa-magnifying-glass {
+   padding: 7px 10px;
+   color: #696969;
+   font-size: 1.1rem;
+}
+
+input.search-box {
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+.search-box-div {
+    width: 100%;
+    display: flex;
+}
+
+.search-box-div:hover {
+    outline: 1px solid gray;
+}
+
+.search-box:focus {
+    outline: 2px solid blue;
+}
+
+input.search-box::placeholder {
+    font-size: 13.5px;
+}
+
+.search-btn {
+    border: none;
+    height: 100%;
+    width: 90px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+
+.search-box-wrapper:hover .search-btn {
+    opacity: 1;
+}
