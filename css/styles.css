@@ -24,7 +24,7 @@ body {
 
 /*** NAVBAR ***/
 nav {
-    
+    background-color: lightblue;
     height: 60px;
     width: 100%;
     display: flex;
