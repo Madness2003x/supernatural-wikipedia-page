@@ -22,31 +22,32 @@ body {
 }
 
 main {
-    margin-top: 60px;
-    margin-right: 18rem;
-    background-color: gray;
+    margin-top: 40px; 
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-}
-
-#side-bar {
-    background-color: lightblue;
+    grid-template-columns: 1fr 4fr;
 }
 
 /** Side-bar **/
 #side-bar {
-    margin-top: 50px;
+    padding: 46px 5px;
     font-size: 0.9rem;
+    max-width: 250px;
 }
 
 #side-bar .side-bar-header {
-    border-bottom: 1px solid gray;
-    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding-bottom: 6px;
     margin-bottom: 5px;
+    color: rgb(71, 71, 71);
 }
 
 #side-bar .side-bar-header a {
     font-size: 0.8rem;
+}
+
+#side-bar a {
+    color: rgb(54, 54, 250);
 }
 
 #side-bar span {
@@ -58,12 +59,70 @@ main {
     margin-top: 10px;
 }
 
-#side-bar a {
+#side-bar a, #main-wrapper a {
     text-decoration: none;
 }
 
 
-
-
-
 /** Main content or the main wrapper **/
+
+#main-wrapper {
+    margin-left: 35px;
+}
+
+#main-wrapper .header {
+    border-bottom: 1px solid rgb(231, 231, 231);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-wrapper .title {
+    font-size: 1.8rem;
+    font-family: serif;
+    padding-bottom: 5px;
+}
+
+#main-wrapper .title span {
+    font-style: italic;   
+}
+
+#main-wrapper .languages {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 10px;
+  color: rgb(65, 65, 255);
+}
+
+#main-wrapper .languages:hover {
+    background-color: rgba(93, 104, 255, 0.267);
+}
+
+#main-wrapper .mini-tabs {
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding: 10px 2px;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#main-wrapper .mini-tab-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#main-wrapper .mini-tab-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-wrapper li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    color: rgb(24, 24, 24);
+}
+
+#main-wrapper .cite-source {
+
+}
